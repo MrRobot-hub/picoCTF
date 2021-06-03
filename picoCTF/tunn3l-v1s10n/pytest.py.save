@@ -1,0 +1,16 @@
+#!/usr/bin/env python3 
+
+def split(password):
+	return[char for char in password]
+
+inp = input("enter password")
+pass_list = []
+inp1 = split(inp)
+print(inp1)
+for i, chars in enumerate(inp1):
+	print(type(chars))
+	pass_list += ord(chars)
+if pass_list == 256:
+	print("welcome")
+else:
+	print("sorry")
